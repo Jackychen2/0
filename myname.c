@@ -1,3 +1,3 @@
 int main() {
-printf("³¯«a¥þ\n");
+printf(é™³å† å…¨\n");
 }
