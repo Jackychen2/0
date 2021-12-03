@@ -9,7 +9,11 @@ double power(double x, int q) {
 
     double m = x;
     for (int i = 1; i < q; i++) {
-        m *= x;
+            m *= x;
+        //HERE
+        //this line should do some operation to achieve multiplications
+        //only ONE line to be ADD
+        //please refer to page 6 of Operation slides to get some idea
     }
     return m;
 }
@@ -36,8 +40,14 @@ int main() {
     for (int i = 0; i < y; i++) {
         //fetch input
         scanf("%lf%d", &p[i], &q[i]);
-        //value cumulation
         result += p[i] * power(x, q[i]);
+        //value cumulation
+        //HERE
+        //this line should do some operation to achieve summations
+        //the left variable and right expression should be UNTOUCHED
+        //only the OPERATION to be MODIFIED
+        //please refer to page 6 of Operation slides to get some idea
+        result = p[i] * power(x, q[i]);
     }
 
     printf("%lf\n", result);
